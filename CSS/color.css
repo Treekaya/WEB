@@ -1,0 +1,44 @@
+
+
+.colBG1, body{
+    background-color: #36383E;
+}
+.colBG2, nav{
+    background-color: #1f1f1f;
+}
+
+
+
+
+.colMain{
+    background-color: #4A90E2;
+}
+.colMain:hover button{
+    background-color: white;
+    color: #1f1f1f;
+}
+.colSub{
+    background-color: #03A9F4;
+}
+
+
+
+.colWhite{
+    background-color: #ffffff;
+}
+.colGood{
+    background-color: #72CC10;
+}
+.colNeutral{
+    background-color: #B8B8B8;
+}
+.colBad{
+    background-color: #D0021B;
+}
+
+
+
+
+.txtColWhite, body{
+    color: #ffffff;
+}

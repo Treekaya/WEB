@@ -1,0 +1,27 @@
+.dFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dFlex section{
+    flex: 1 1 250px;
+}
+
+.imgFluid, video{
+    max-width: 100%;
+}
+
+.positionTest{
+    position: relative;
+}
+
+.positionTest figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    font-size: 2em;
+    color: white;
+    background-color: #4A90E2;
+}

@@ -1,0 +1,65 @@
+
+
+
+/* General */
+main{
+    padding: 10px;
+    font-family: "NotoSans", sans-serif;
+}
+.flexMain {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding-bottom: 70px;
+}
+nav{
+    padding: 30px 40px;
+    list-style: none;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+}
+#footer{
+    padding: 5px 2%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 1.2em;
+}
+h1 {
+    text-align: center;
+}
+
+/* Specific */
+
+a{
+    color: #75ddff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex section{
+    flex: 1 1 250px;
+    border-radius: 20px;
+    background-color: #4A90E2;
+    color: #ffffff;
+    margin: 15px 20px;
+    padding: 15px;
+}
+
+.imgFluid{
+    width: 100%;
+}
+
+.txtRighter{
+    margin-left: 2%;
+}
