@@ -11,6 +11,7 @@ main{
     align-items: center;
     min-height: 90vh;
     padding-bottom: 70px;
+    place-content: center
 }
 nav{
     padding: 30px 40px;
@@ -29,9 +30,7 @@ body {
     text-align: right;
     font-size: 1.2em;
 }
-h1 {
-    text-align: center;
-}
+
 
 /* Specific */
 
@@ -60,6 +59,14 @@ a{
     width: 100%;
 }
 
-.txtRighter{
+.righter{
     margin-left: 2%;
+}
+
+.middle {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
 }
