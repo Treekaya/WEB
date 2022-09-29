@@ -1,0 +1,12 @@
+.imgSize{
+    padding: 0;
+    width: 300px;
+    filter: dropShadow();
+    margin: 0 2% 0 0;
+}
+
+.inspectorItem{
+    background-color: var(--colDark);
+    width: 100%;
+    padding: 10px;
+}

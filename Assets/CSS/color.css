@@ -1,0 +1,50 @@
+:root{
+
+    --colPrimary: #4A90E2;
+    --colSecondary: #0d6efd;
+    --colDark: #1f1f1f;
+    --colLight: white;
+
+}
+
+.colPri, body{
+    background-color: var(--colPrimary);
+    color: var(--colLight);
+}
+.colSub{
+    background-color: var(--colSecondary);
+    color: var(--colLight);
+}
+
+nav, #footer, .colDark{
+    background-color: var(--colDark);
+    color: var(--colLight);
+}
+
+
+
+
+.colWhite{
+    background-color: #ffffff;
+}
+.colGood{
+    background-color: #72CC10;
+}
+.colNeutral{
+    background-color: #B8B8B8;
+}
+.colBad{
+    background-color: #D0021B;
+}
+
+.btnWhite:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+
+.txtColWhite, body{
+    color: var(--colLight);
+}
