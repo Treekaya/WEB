@@ -6,7 +6,7 @@ main {
     place-content: center;
     flex-direction: column;
 
-    padding: 10px;
+    padding: 10px 0;
 }
 section{
     display: flex;
@@ -19,6 +19,10 @@ nav{
     padding: 30px 40px;
     list-style: none;
 }
+    nav ul li {
+        padding: 0 4%;
+        white-space: nowrap;
+    }
 body {
     min-height: 100vh;
     position: relative;
@@ -77,17 +81,26 @@ a{
 
 table{
     border-radius: 15px;
+    table-layout:fixed;
     overflow:hidden;
+}
+
+table::after{
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
 }
 
 tr:nth-child(even) {
     background-color: white;
 }
 
-tr:nth-child(odd) {
-    background-color: #d9d9d9;
+th {
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-thead{
-    background-color: #1f1f1f;
+td{
+    background-color: #ffffff;
 }
