@@ -1,0 +1,68 @@
+nav{
+    background-color: #75ddff;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+nav li a{
+    padding: 10px;
+    text-decoration: none;
+}
+.flexH{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flexH section{
+    flex: 1 1 250px;
+    padding: 20px;
+}
+header{
+    min-height: 25vh;
+    background-image: url("https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.navButton{ display: none;}
+img{
+    max-width: 100%;
+}
+
+
+
+@keyframes blink {
+    0% {background-color: #75ddff;}
+    100% {background-color: chocolate;}
+}
+
+.animation{
+    animation: blink 1s infinite alternate;
+}
+
+@media screen and (max-width: 720px) {
+    header{
+        background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+    }
+    .navButton{
+        display: block;
+    }
+    nav ul.flexH{
+        display: none;
+    }
+    [aria-expanded="true"]~ul{
+        display: block !important;
+    }
+}
+
+
+@media print {
+    a[href]::after{
+        content: " [" attr(href) "] ";
+    }
+}

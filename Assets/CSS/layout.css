@@ -9,20 +9,23 @@ main {
     padding: 10px 0;
 }
 section{
-    display: flex;
     align-items: center;
-    place-content: center;
-    flex-wrap: wrap;
+    text-align: center;
     padding: 2% 4%;
 }
 nav{
-    padding: 30px 40px;
+    place-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul li {
+    padding: 0 4%;
+    white-space: nowrap;
     list-style: none;
 }
-    nav ul li {
-        padding: 0 4%;
-        white-space: nowrap;
-    }
+nav ul {
+    margin: 0px;
+}
 body {
     min-height: 100vh;
     position: relative;
@@ -48,13 +51,29 @@ body {
 .lefter{
     margin-right: 2%;
 }
-
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0px auto;
+}
+.content div{
+    margin: 5px auto;
+}
 
 .middle {
     text-align: center;
 }
 .left {
     text-align: left;
+    margin-left: 0;
+    justify-content: left;
+}
+.right{
+    text-align: right;
+    margin-right: 0;
+    justify-content: right;
 }
 
 
@@ -64,13 +83,26 @@ a{
     font-weight: bold;
 }
 
-.flex{
+.flexH{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
 }
 
-.flex section{
+.flexV{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.flexRight{
+    align-items: flex-end;
+}
+
+.flexH section{
     flex: 1 1 250px;
     border-radius: 20px;
     background-color: #4A90E2;
@@ -86,10 +118,14 @@ table{
 }
 
 table::after{
-    padding: 10px;
+    content: ' ';
+    padding-top: 3px;
+    padding-bottom: 10px;
+    padding-right: 1000%;
     background-color: white;
     width: 100%;
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 tr:nth-child(even) {
